@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    text-align: center;
+}
+main{
+    height: 100%;
+}
+section{
+    height: 100%;
+    padding: 4em 2em;
+    position: relative;
+    width: 100%;
+}
+header{
+    background-color: rgb(117, 131, 153);
+    padding: 0.8em 2em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#logo{
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+    float: left;
+    height: 50px;
+    margin-left: 4em;
+    width: 25%;
+}
+nav{
+    float: right;
+    text-align: right;
+    width: 70%;
+    padding-right: 5em;
+}
+ul {
+    list-style-type: none; /*Para quitar las viñetas de la lista*/
+}
+ul li{
+    border-right: 0.01em solid rgba(255, 255, 255, 1); /*Las líneas que separan los elementos del menú*/
+    display: inline-block;
+    padding: 0.1em 1em;
+}
+ul li a{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+ul li a:hover, ul li a:active{
+    color: #000000;
+}
+ul li:nth-last-of-type(1){
+    border-right: none;
+}
+video{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    position: absolute;
+}
+
+
+
+/* Carrito */
+.compra{
+    float: right;
+    position: absolute;
+    margin-left: 87rem;
+    margin-top: 0.8rem;
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top: 110%;
+    z-index: 1;
+    background-color: rgb(117, 131, 153);
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.tabla {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2.5rem;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+th{
+    padding: 12px 15px;
+    text-align: left;
+    color: rgb(225, 225, 225);
+    border-bottom: 1px solid rgb(225, 225, 225);
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: -internal-center;
+}
+#vaciar-carrito{
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    height: 38px;
+    padding: 0px 70px;
+    color: rgb(225, 225, 225);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(187, 187, 187);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+/* Carrito */
+
+
+
+#home{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#home #globo{
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+    height: 11rem;
+    left: 50%;
+    position: absolute;
+    top: 22%;
+    transform: translateX(-50%);
+    width: 20rem;
+}
+#home h1{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    position: relative;
+    top: 45%;
+}
+#home h2{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    top: 30%;
+    text-align: left;
+    padding: 0 50% 0 5%;
+    font-weight: 900;
+}
+#home p{
+    color: rgba(225, 225, 225, 1);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0 50% 0 5%;
+    position: relative;
+    top: 30%;
+    text-align: left;
+}
+#temas p{
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contenido #foto{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    right: 10%;
+    z-index: 90;
+}
+#home a {
+    background: linear-gradient(rgba(85, 109, 147, 1), rgb(104, 121, 148));
+    border-radius: 0.25em;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    left: 12%;
+    letter-spacing: 0.1rem;
+    padding: 0.85em 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 35%;
+    transform: translateX(-50%);
+    width: 12rem;
+    z-index: 2;
+}
+#home #abajo { /*configuramos la flechita que aparece cuando se pasa el curso por el botón "Conozca más"*/
+    background: url(../svg/abajo.svg);
+    display: block;
+    height: 3rem;
+    left: 50%;
+    opacity: 0;
+    position: relative;
+    top: 50%;
+    transform: translateX(-50%);
+    transition: all 0.35s;
+    width: 3rem;
+    z-index: 1;
+}
+#home a:hover + #abajo, #home a:active + #abajo { /*Hacemos que aparezca la flecha*/
+    opacity: 0.5;
+    top: 55%;
+}
+article{
+    column-count: 3;
+    column-gap: 6em;
+    padding-top: 0.5em;
+}
+article #imagen1{
+    background-image: url(../img/uno.jpg);
+}
+article #imagen2{
+    background-image: url(../img/dos.jpg);
+}
+article #imagen3{
+    background-image: url(../img/tres.jpg);
+}
+article div{
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.65em solid rgba(85, 109, 147, 1);
+    margin: 0 auto 1.5em;
+    height: 12rem;
+    width: 12rem;
+}
+#title{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 3rem;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+#article{
+    color: rgba(85, 109, 147, 1);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 2.5rem;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+article a{
+    background: linear-gradient(rgba(85, 109, 147, 1), rgb(104, 121, 148));
+    border-radius: 0.25em;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.25em auto 2em;
+    padding: 0.75em 0;
+    text-decoration: none;
+    width: 10rem;
+}
+
+/*Cursos*/
+.container{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    left: 10%;
+    margin: 30px auto;
+}
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgb(117, 131, 153);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.imagen{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    border-radius: 10%;
+}
+
+.container .box .content{
+    position: absolute;
+    height: calc(100% - 10px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 50%;
+    transition: 0.5s;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.agregar-carrito{
+    background: white;
+    border-radius: 0.25em;
+    color: rgba(85, 109, 147, 1);
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+#contacto{
+    top: 70%;
+    position: relative;
+}
+
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: auto;
+    border-radius: 10px;  
+    padding-top: 10px; 
+    background-color: #e0e0e0; 
+    padding-left: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+}
+.formulario{
+    margin-left: -30px;
+}
+input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+label{
+    display: block; 
+    float: center;  
+}
+#enviar{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #ab4493; 
+    border-color: #ab4493; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    /*cursor: pointer; --> Si queremos que se muestre la mano cuando pasamos por el botón*/ 
+}
+button p{
+    color: #fff; 
+}
+span{
+    color: #ab4493; 
+}
+.aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+}
+::-webkit-input-placeholder {
+   color: #a8a8a8;
+}
+::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+}
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+
+#footer{
+    background-color: rgba(123, 123, 123, 0.5);
+    border-top-color: 0.5em solid rgb(92, 120, 213);
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5em 5em;
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 600px;
+}

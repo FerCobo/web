@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fer_cobo - Diseño web</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link type="text/css" rel="stylesheet" href="css/tailwind.min.css"  media="screen,projection"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/scrollomatic.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">Inicio</a></li>
+                <li><a href="#contacto" class="scroll">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido">
+        <section id="temas">
+            <h3 id="title">Temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4 id="article">Selección de proyectos</h4>
+                <p>Aquí encontrarás los proyectos más representativos para que les eches un vistazo y veas las posibilidades que puede haber</p>
+                <a href="page1.html" target="_blank">Leer más</a> <!--target="_blank" sirve para que al hacer click en el enlace, este se abra en una nueva página-->
+                <div id="imagen2"></div>
+                <h4 id="article">Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo</p>
+                <a href="">Leer más</a>
+                <div id="imagen3"></div>
+                <h4 id="article">Subtítulo nivel 4</h4>
+                <p>Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo Texto simulado a nivel de texto descriptivo</p>
+                <a href="">Leer más</a>
+            </article>
+        </section>
+        <section id="contacto">
+            <h3 id="title">Contacto</h3>
+            <div class="contact_form">
+                <div class="formulario">      
+                  <h1>Formulario de contacto</h1>
+                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                      <form id="enviar-mail" action="https://formsubmit.co/fer-gar-co@hotmail.com" method="POST">
+                        <div class="aviso">
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                                </label>
+                                <input type="text" name="name" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                                </label>
+                                <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                            </p>
+                            <p>
+                                <label for="telefone" class="colocar_telefono">Teléfono
+                                </label>
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                            </p>  
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                                </label>                     
+                                <textarea name="subject" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                            </p>    
+                            <button id="enviar" type="submit" name="enviar_formulario"><p>Enviar</p></button>
+                        </div>     
+                    </form>
+                </div>  
+              </div>
+            <a href="#contenido" class="arriba" class="scroll"></a>
+        </section>
+        <footer>
+            <p id="footer">Copyrigth &copy; 2022 Fernando García - Todos los derechos reservados</p>
+        </footer>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
